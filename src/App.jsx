@@ -10,7 +10,7 @@ function App() {
   const actualizarBuscarApp = (nuevoValor) => {
     setBuscarApp(nuevoValor);
   };
-  <p>Lorem ipsum dolor sit amet.</p>
+
   const personas = [
     {
       id: 1,
