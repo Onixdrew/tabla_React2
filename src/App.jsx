@@ -10,17 +10,17 @@ function App() {
   const actualizarBuscarApp = (nuevoValor) => {
     setBuscarApp(nuevoValor);
   };
-  const personas = [
+ const personas = [
     {
       id: 1,
       nombre: "francisco Martinez ",
-      Descripción: "prendiz SENA",
+      Descripción: "aprendiz",
       
     },
     {
       id: 2,
       nombre: "Luis Jimenesz",
-      Descripción: "prendiz cauca",
+      Descripción: "funcionario",
       
     },
     {
@@ -31,17 +31,16 @@ function App() {
     {
       id: 4,
       nombre: "sandra Lopez",
-      Descripción: "prendiz cauca",
+      Descripción: "instructor",
      
     },
     {
       id: 5,
       nombre: "Gabriel Mars",
-      Descripción: "prendiz cauca",
+      Descripción: "administrador",
       
     },
   ];
-
 
   return (
     <div>
