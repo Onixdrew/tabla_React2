@@ -27,7 +27,7 @@ function App() {
     {
       id: 3,
       nombre: "Andres Mosquera",
-      Descripción: "prendiz sena",
+      Descripción: "aprendiz",
     },
     {
       id: 4,
