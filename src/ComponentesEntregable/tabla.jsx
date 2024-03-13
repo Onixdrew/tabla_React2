@@ -1,6 +1,6 @@
 
 
-const Tabla = ({arreglo, buscar}) => {
+const Tabla = ({arreglo, buscar, NumOpcion}) => {
   
   
   return (
@@ -21,8 +21,8 @@ const Tabla = ({arreglo, buscar}) => {
               .filter((persona) => {
                 if (buscar.toLowerCase() === "") {
                   return persona;
-
-                } else {
+                  
+                }else {
                   return (
                     persona.id.toString().includes(buscar.toString()) ||
                     persona.nombre.toLowerCase().includes(buscar.toLowerCase()) ||
@@ -31,14 +31,34 @@ const Tabla = ({arreglo, buscar}) => {
                 }
               })
 
-              .map((persona) => (
-                <tr key={persona.id}>
-                  <td className="col2">{persona.id}</td>
-                  <td className="col2">{persona.nombre}</td>
-                  <td className="col2">{persona.Descripción}</td>
               
-                </tr>
-              ))}
+              .map((persona, index) => {
+                if (index >= NumOpcion) {
+                  return null
+                }
+                // else if
+                // (NumOpcion== 0){
+                //   return (
+                //     <tr key={persona.id}>
+                //       <td className="col2">{persona.id}</td>
+                //       <td className="col2">{persona.nombre}</td>
+                //       <td className="col2">{persona.Descripción}</td>
+                //     </tr>
+                //   );
+                else {
+                  return (
+                    <tr key={persona.id}>
+                      <td className="col2">{persona.id}</td>
+                      <td className="col2">{persona.nombre}</td>
+                      <td className="col2">{persona.Descripción}</td>
+                    </tr>
+                  ); 
+                }
+              })
+
+              
+            }
+           
           </tbody>
         </table>
       </div>
