@@ -174,8 +174,9 @@ function App() {
   return (
     <div>
       <div className="mt-[18vh] lg:ml-[30vw] sm:ml-[20vw]">
-        <div className=""><InputTabla onBuscarChange={actualizarBuscarApp} opcionApp={actualizarOpcionApp}></InputTabla></div>
+        <div className=" sm:ml-[7vw] md:ml-[4vw] md:mb-5"><InputTabla onBuscarChange={actualizarBuscarApp} opcionApp={actualizarOpcionApp}></InputTabla></div>
         <Tabla arreglo={personas} buscar={buscarApp} NumOpcion={opcionApp} ></Tabla>
+        <h1 className="sm:ml-[20vw] md:ml-[10vw] md:mb-[30vh] sm:mt-4 text-xl font-bold">{opcionApp} de {personas.length}</h1>
       </div>
     </div>
   );
